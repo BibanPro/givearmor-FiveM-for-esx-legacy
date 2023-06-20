@@ -1,0 +1,6 @@
+RegisterNetEvent("addArmour")
+AddEventHandler("addArmour", function(amount)
+    local playerPed = PlayerPedId()
+    local armor = GetPedArmour(playerPed)
+    SetPedArmour(playerPed, armor + amount)
+end)
